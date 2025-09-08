@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,87 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ddd;
+}
+
+.tabs .active {
+  background: #007bff;
+  color: white;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  margin: 8px 0;
+  background: #f1f1f1;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.stats {
+  text-align: center;
+  font-size: 18px;
 }
