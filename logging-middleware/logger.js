@@ -1,5 +1,5 @@
-import axios from "axios";
-import "dotenv/config";
+const axios = require("axios");
+require("dotenv").config();
 
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 const LOG_API_URL = process.env.LOG_API_URL || "http://20.244.56.144/evaluation-service/logs";
@@ -38,7 +38,7 @@ function validateLogPayload(payload) {
  * @param {string} pkg     - Package/module name
  * @param {string} message - Log message
  */
-export async function Log(stack, level, pkg, message) {
+async function Log(stack, level, pkg, message) {
     if (!ACCESS_TOKEN) {
         console.error("Authorization token missing. Please set ACCESS_TOKEN in .env");
         return;
@@ -71,4 +71,4 @@ export async function Log(stack, level, pkg, message) {
     }
 }
 
-module.exports = { Log }
+module.export = { Log }
